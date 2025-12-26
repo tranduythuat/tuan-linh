@@ -1,0 +1,41 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.end {
+    width: 100%;
+    aspect-ratio: 500 / 810;
+    background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/tuan-linh/DSC04187 (1).webp') no-repeat 10% 100% / cover;
+    justify-content: end;
+    .content {
+        width: 100%;
+        padding: 0 8%;
+        font-family: $blushing-rose-font;
+        color: white;
+        p.subtext {
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 2%;
+            line-height: 1.2;
+        }
+        p.thanks-text {
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 142%;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            p.subtext {
+                font-size: calc((12 / 500) * 100vw);
+                letter-spacing: calc((1 / 500) * 100vw);
+            }
+
+            p.thanks-text {
+                font-size: calc((16 / 500) * 100vw);
+                letter-spacing: calc((1 / 500) * 100vw);
+            }
+        }
+    }
+}
