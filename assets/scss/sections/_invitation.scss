@@ -17,6 +17,8 @@
                     font-size: 70px;  
                     span {
                         font-size: 30px;
+                        position: relative;
+                        left: -1%;
                     }
                 }
             }
@@ -24,7 +26,7 @@
             .family-info {
                 margin-top: 15%;
                 p {
-                    font-size: 11px;
+                    font-size: 14px;
                 }
                 p.en  {
                     margin-top: 4%;
@@ -34,7 +36,7 @@
             .invitation-text {
                 margin-top: 5%;
                 p {
-                    font-size: 11px;
+                    font-size: 14px;
                 }
                 p.en {
                     margin-top: 4%;
@@ -45,7 +47,7 @@
                 text-transform: uppercase;
                 margin-top: 10%;
                 h2 {
-                    font-size: 26px;
+                    font-size: 32px;
                     font-weight: 300;
                     letter-spacing: 2px;
                 }
@@ -53,7 +55,7 @@
                     font-size: 20px;
                 }
                 p.role {
-                    font-size: 11px;
+                    font-size: 14px;
                 }
 
                 p.divider {
@@ -91,21 +93,15 @@
                     }
                 }
 
-                .family-info {
+                .family-info, .invitation-text {
                     p {
-                        font-size: calc((11 / 500) * 100vw);  
-                    }
-                }
-    
-                .invitation-text {
-                    p {
-                        font-size: calc((11 / 500) * 100vw);  
+                        font-size: calc((14 / 500) * 100vw);  
                     }
                 }
     
                 .couple-info {
                     h2 {
-                        font-size: calc((26 / 500) * 100vw);  
+                        font-size: calc((32 / 500) * 100vw);  
                         letter-spacing: calc((2 / 500) * 100vw);  
                     }
                     .divider-couple {

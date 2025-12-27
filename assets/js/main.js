@@ -3,29 +3,29 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Gọi các hiệu ứng có sẵn
 document.addEventListener("DOMContentLoaded", () => {
-  const mainSwiper = new Swiper(".main-swiper", {
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
-    // thumbs: {
-    //   swiper: thumbSwiper,
-    // },
-    autoplay: {
-      delay: 3000, // thời gian giữa các lần chuyển (ms)
-      disableOnInteraction: true, // không tắt khi người dùng bấm
-    },
+  // const mainSwiper = new Swiper(".main-swiper", {
+  //   spaceBetween: 10,
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     dynamicBullets: true,
+  //   },
+  //   // thumbs: {
+  //   //   swiper: thumbSwiper,
+  //   // },
+  //   autoplay: {
+  //     delay: 3000, // thời gian giữa các lần chuyển (ms)
+  //     disableOnInteraction: true, // không tắt khi người dùng bấm
+  //   },
 
-    loop: true, // lặp lại ảnh
-    effect: "fade", // hiệu ứng chuyển mượt
-    fadeEffect: { crossFade: true },
-    speed: 1000 // tốc độ chuyển (ms)
-  });
+  //   loop: true, // lặp lại ảnh
+  //   effect: "fade", // hiệu ứng chuyển mượt
+  //   fadeEffect: { crossFade: true },
+  //   speed: 1000 // tốc độ chuyển (ms)
+  // });
   
   gsapFlipIn(".animate-flip");
   gsapFadeIn(".fade-in");
