@@ -42,6 +42,8 @@
             margin-bottom: 10%;
             p {
                 text-align: left;
+                font-size: 14px;
+                letter-spacing: 1px;
             }
             p.vi {
                 margin-bottom: 3%;
@@ -52,6 +54,11 @@
             .form-group {
                 margin-bottom: 5%;
 
+                .question {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                }
+
                 input[type="text"],
                 input[type="number"],
                 textarea {
@@ -61,7 +68,7 @@
                     border: 2px solid #000;
                     border-radius: 15px;
                     background: white;
-                    font-size: 9.6px;
+                    font-size: 14px;
                     color: #000;
                     transition: border-color 0.3s ease;
                 }
@@ -98,6 +105,7 @@
 
                     .radio-label {
                         font-family: $gothamLight-font;
+                        font-size: 14px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -136,7 +144,7 @@
                 border: none;
                 border-radius: 15px;
                 font-weight: 600;
-                font-size: 12px;
+                font-size: 14px;
                 cursor: pointer;
                 text-transform: uppercase;
                 letter-spacing: 1px;
@@ -163,23 +171,35 @@
                     font-size: calc((25 / 500) * 100vw);
                 }
             }
+
+            .info-notice {
+                p {
+                    font-size: calc((14 / 500) * 100vw);
+                    letter-spacing: calc((1 / 500) * 100vw);
+                }
+            } 
     
             form {
                 .form-group {
+                    .question {
+                        font-size: calc((14 / 500) * 100vw);
+                        letter-spacing: calc((1 / 500) * 100vw);
+                    }
+
                     input[type="text"],
                     input[type="number"],
                     textarea {
-                        font-size: calc((9.11 / 500) * 100vw);
+                        font-size: calc((14 / 500) * 100vw);
                     }
     
                     textarea {
-                        font-size: calc((9.16/ 500) * 100vw);
+                        font-size: calc((14/ 500) * 100vw);
                         letter-spacing: calc((0.5 / 500) * 100vw);
                     }
                 }
     
                 .submit-btn {
-                    font-size: calc((12 / 500) * 100vw);
+                    font-size: calc((14 / 500) * 100vw);
                     letter-spacing: calc((1 / 500) * 100vw);
                 }
             }

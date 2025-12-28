@@ -212,7 +212,7 @@ header {
   left: -1%;
 }
 .invitation .content .text-box .family-info {
-  margin-top: 15%;
+  margin-top: 5%;
 }
 .invitation .content .text-box .family-info p {
   font-size: 14px;
@@ -293,7 +293,6 @@ header {
 .location .content {
   width: 100%;
   font-family: "1FTVBlushingRose", sans-serif;
-  padding-bottom: 5%;
 }
 .location .content p {
   font-size: 12.6px;
@@ -348,7 +347,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 10% 0;
+  margin-top: 10%;
 }
 .location .content .ceremony-block .timeline h2 {
   font-size: 24px;
@@ -403,7 +402,7 @@ header {
 .location .content .ceremony-block .location-details .location-icon {
   max-width: 24px;
   width: 100%;
-  margin: 10% 0 2%;
+  margin: 5% 0 2%;
 }
 .location .content .ceremony-block .location-details .location-icon img {
   width: 100%;
@@ -496,7 +495,7 @@ header {
 .album .content {
   width: 100%;
   aspect-ratio: 500/760;
-  padding: 15% 0;
+  padding: 0;
 }
 .album .content .swiper {
   width: 100%;
@@ -581,12 +580,18 @@ header {
 }
 .rsvp .content .info-notice p {
   text-align: left;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 .rsvp .content .info-notice p.vi {
   margin-bottom: 3%;
 }
 .rsvp .content form .form-group {
   margin-bottom: 5%;
+}
+.rsvp .content form .form-group .question {
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 .rsvp .content form .form-group input[type=text],
 .rsvp .content form .form-group input[type=number],
@@ -597,7 +602,7 @@ header {
   border: 2px solid #000;
   border-radius: 15px;
   background: white;
-  font-size: 9.6px;
+  font-size: 14px;
   color: #000;
   transition: border-color 0.3s ease;
 }
@@ -628,6 +633,7 @@ header {
 }
 .rsvp .content form .form-group .attendance-buttons .radio-label {
   font-family: "SVN-GothamLight", sans-serif;
+  font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -661,7 +667,7 @@ header {
   border: none;
   border-radius: 15px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -679,17 +685,25 @@ header {
   .rsvp .content .header .main-heading, .rsvp .content .header .english-heading {
     font-size: 5vw;
   }
+  .rsvp .content .info-notice p {
+    font-size: 2.8vw;
+    letter-spacing: 0.2vw;
+  }
+  .rsvp .content form .form-group .question {
+    font-size: 2.8vw;
+    letter-spacing: 0.2vw;
+  }
   .rsvp .content form .form-group input[type=text],
   .rsvp .content form .form-group input[type=number],
   .rsvp .content form .form-group textarea {
-    font-size: 1.822vw;
+    font-size: 2.8vw;
   }
   .rsvp .content form .form-group textarea {
-    font-size: 1.832vw;
+    font-size: 2.8vw;
     letter-spacing: 0.1vw;
   }
   .rsvp .content form .submit-btn {
-    font-size: 2.4vw;
+    font-size: 2.8vw;
     letter-spacing: 0.2vw;
   }
 }

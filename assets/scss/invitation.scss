@@ -67,7 +67,7 @@ body {
     }
 
     .initials {
-        margin-bottom: 20%;
+        margin-bottom: 5%;
         h2 {
             font-family: $blushing-rose-font;
             font-size: 60px;  
@@ -120,7 +120,7 @@ body {
     }
 
     .save-ourdate {
-        font-size: 12px;
+        font-size: 14px;
         p {
             line-height: 1.7;
         }
@@ -136,7 +136,7 @@ body {
         align-items: center;
         a.btn-link {
             display: block;
-            font-size: 12px;
+            font-size: 14px;
             font-weight: bold;
             text-decoration: none;
             color: $primary-color;
@@ -145,7 +145,7 @@ body {
             margin: 1.2%;
             border-radius: 10px;
             text-transform: uppercase;
-            min-height: 30px;
+            min-height: 35px;
             @include flex-center;
 
             &:hover {
@@ -181,13 +181,13 @@ body {
         }
 
         .save-ourdate {
-            font-size: calc((12 / 648) * 100vw); 
+            font-size: calc((14 / 648) * 100vw); 
         }
 
         .btn-group {
             a.btn-link {
-                font-size: calc((12 / 648) * 100vw);
-                min-height: calc((30 / 648) * 100vw);
+                font-size: calc((14 / 648) * 100vw);
+                min-height: calc((35 / 648) * 100vw);
             }
         }
     
