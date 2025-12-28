@@ -7,7 +7,7 @@
         width: 100%;
         font-family: $blushing-rose-font;
         p {
-            font-size: 12.6px;
+            font-size: 14px;
         }
         .header-section {
             @include flex-center;
@@ -46,6 +46,9 @@
             margin: 10% 0;
             p.hour {
                 text-transform: uppercase;
+            }
+            p.day-detail {
+                font-size: 18px;
             }
             h2.date {
                 font-size: 42px;
@@ -164,7 +167,7 @@
     @media (max-width: 500px) {
         .content {
             p {
-                font-size: calc((12.6 / 500) * 100vw);
+                font-size: calc((14 / 500) * 100vw);
             }
             .header-section {
                 .time-and-location {
@@ -183,7 +186,10 @@
                 h2.date {
                     font-size: calc((42 / 500) * 100vw);
                     letter-spacing: calc((4 / 500) * 100vw);;
-    
+                }
+
+                p.day-detail {
+                    font-size: calc((18 / 500) * 100vw);
                 }
 
                 .timeline {

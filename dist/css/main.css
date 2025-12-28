@@ -295,7 +295,7 @@ header {
   font-family: "1FTVBlushingRose", sans-serif;
 }
 .location .content p {
-  font-size: 12.6px;
+  font-size: 14px;
 }
 .location .content .header-section {
   display: flex;
@@ -334,6 +334,9 @@ header {
 }
 .location .content .ceremony-block p.hour {
   text-transform: uppercase;
+}
+.location .content .ceremony-block p.day-detail {
+  font-size: 18px;
 }
 .location .content .ceremony-block h2.date {
   font-size: 42px;
@@ -453,7 +456,7 @@ header {
 }
 @media (max-width: 500px) {
   .location .content p {
-    font-size: 2.52vw;
+    font-size: 2.8vw;
   }
   .location .content .header-section .time-and-location {
     max-width: 37vw;
@@ -467,6 +470,9 @@ header {
   .location .content .ceremony-block h2.date {
     font-size: 8.4vw;
     letter-spacing: 0.8vw;
+  }
+  .location .content .ceremony-block p.day-detail {
+    font-size: 3.6vw;
   }
   .location .content .ceremony-block .timeline h2 {
     font-size: 4.8vw;
