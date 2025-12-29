@@ -97,8 +97,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById('player-btn');
   btn.addEventListener('click', toggleMusic);
 
-  const qrcode = document.getElementById('qr-btn');
-  qrcode.addEventListener("click", toggleQR);
+  // const qrcode = document.getElementById('qr-btn');
+  // qrcode.addEventListener("click", toggleQR);
 
   function toggleQR(e) {
       e.preventDefault();
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-  async function handleFormSubmit(e) {
+  async function handleFormSubmit(e, lang) {
     e.preventDefault();
 
     const form = e.target;
@@ -145,8 +145,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Thông báo khi bắt đầu gửi
     Swal.fire({
-      title: 'Đang gửi ...',
-      text: "Vui lòng chờ trong giây lát",
+      title: lang === 'vi'? 'Đang gửi ...': '傳送 ...',
+      text: lang === 'vi'? "Vui lòng chờ trong giây lát": '請您稍候',
       icon: "info",
       allowOutsideClick: false,
       didOpen: () => {
@@ -154,10 +154,15 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
 
-    const url = "?sheet=confirm";
+    const SHEET_ENDPOINTS = {
+      vi: "?sheet=vi",
+      ch: "?sheet=en",
+    };
+
+    const sheetURL = SHEET_ENDPOINTS[lang] || SHEET_ENDPOINTS.vi;
 
     try {
-      const res = await fetch(url, {
+      const res = await fetch(sheetURL, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
@@ -173,8 +178,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Thông báo thành công
       Swal.fire({
-        title: "Thành công!",
-        text: "Cảm ơn bạn đã xác nhận. Thông tin đã được chuyển đến cô dâu và chú rể rồi nha.",
+        title: lang === 'vi'? "Thành công!":  "成功!",
+        text: lang === 'vi'? "Cảm ơn bạn đã xác nhận. Thông tin đã được chuyển đến cô dâu và chú rể rồi nha.": "敬感謝您的確認，相關資訊已轉達予新人。",
         icon: "success",
         confirmButtonText: "OK",
         confirmButtonColor: "#000",
@@ -184,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Thông báo lỗi
       Swal.fire({
-        title: "Lỗi!",
+        title: lang === 'vi'? "Lỗi!": "錯誤!",
         text: "OPPS! Something went wrong: " + error.message,
         icon: "error",
         confirmButtonText: "Try again.",
@@ -194,7 +199,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const form = document.forms["rsvpForm"];
+  const formChinese = document.forms["rsvpForm-chinese"];
   if (form) {
-    form.addEventListener("submit", (e) => handleFormSubmit(e));
+    form.addEventListener("submit", (e) => handleFormSubmit(e, 'vi'));
+  }
+
+  if (formChinese) {
+    formChinese.addEventListener("submit", (e) => handleFormSubmit(e, 'ch'));
   }
 });
