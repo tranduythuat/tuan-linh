@@ -38,6 +38,7 @@
             }
             .main-heading.chinese {
                 font-size: 27px;
+                font-family: 'kaiu', sans-serif;
             }
         }
 
@@ -50,6 +51,7 @@
             }
             p.chinese {
                 font-size: 16px;
+                font-family: 'kaiu', sans-serif;
             }
             p.vi {
                 margin-bottom: 3%;
@@ -67,6 +69,7 @@
 
                 .question.chinese {
                     font-size: 16px;
+                    font-family: 'kaiu', sans-serif;
                 }
 
                 input[type="text"],
@@ -87,6 +90,7 @@
                 input[type="number"].chinese,
                 textarea.chinese {
                     font-size: 16px;
+                    font-family: 'kaiu', sans-serif;
                 }
 
                 input[type="text"]:focus,
@@ -141,6 +145,7 @@
 
                     .radio-label.chinese {
                         font-size: 16px;
+                        font-family: 'kaiu', sans-serif;
                     }
 
                     .radio-wrapper input[type="radio"]:checked + .radio-label {
@@ -174,6 +179,7 @@
 
             .submit-btn.chinese {
                 font-size: 16px;
+                font-family: 'kaiu', sans-serif;
             }
     
             .submit-btn:hover {

@@ -30,6 +30,9 @@
                     top: 0;
                     left: 0;
                 }
+                &.chinese {
+                    font-family: 'kaiu', sans-serif;
+                }
             }
             p.sub-en {
                 font-size: 10.6px;
@@ -49,6 +52,9 @@
             }
             p.day-detail {
                 font-size: 18px;
+                span {
+                    font-family: 'kaiu', sans-serif;
+                }
             }
             h2.date {
                 font-size: 42px;
@@ -88,6 +94,9 @@
                         }
                         .desc {
                             width: 100%;
+                            .title.chinese {
+                                font-family: 'kaiu', sans-serif;
+                            }
                         }
                     }
                     &.friend {
@@ -124,6 +133,9 @@
                     font-size: 24px;
                     font-weight: 100;
                     letter-spacing: 2px;
+                }
+                &.chinese {
+                    font-family: 'kaiu', sans-serif;
                 }
             }
         }

@@ -180,6 +180,7 @@ header {
 }
 .hero .content p.couple-names.chinese {
   font-size: 27px;
+  font-family: "kaiu", sans-serif;
 }
 .hero .content .invited-text {
   font-size: 12px;
@@ -232,6 +233,9 @@ header {
 .invitation .content .text-box .family-info p.en {
   margin-top: 4%;
 }
+.invitation .content .text-box .family-info.chinese {
+  font-family: "kaiu", sans-serif;
+}
 .invitation .content .text-box .invitation-text {
   margin-top: 5%;
 }
@@ -242,6 +246,9 @@ header {
   margin-top: 4%;
   margin-bottom: 15%;
 }
+.invitation .content .text-box .invitation-text.chinese {
+  font-family: "kaiu", sans-serif;
+}
 .invitation .content .text-box .couple-info {
   text-transform: uppercase;
   margin-top: 10%;
@@ -251,7 +258,8 @@ header {
   font-weight: 300;
   letter-spacing: 2px;
 }
-.invitation .content .text-box .couple-info h2 {
+.invitation .content .text-box .couple-info h2.chinese {
+  font-family: "kaiu", sans-serif;
   font-size: 34px;
 }
 .invitation .content .text-box .couple-info .divider-couple {
@@ -339,6 +347,9 @@ header {
   top: 0;
   left: 0;
 }
+.location .content .header-section .time-and-location.chinese {
+  font-family: "kaiu", sans-serif;
+}
 .location .content .header-section p.sub-en {
   font-size: 10.6px;
 }
@@ -355,6 +366,9 @@ header {
 }
 .location .content .ceremony-block p.day-detail {
   font-size: 18px;
+}
+.location .content .ceremony-block p.day-detail span {
+  font-family: "kaiu", sans-serif;
 }
 .location .content .ceremony-block h2.date {
   font-size: 42px;
@@ -401,6 +415,9 @@ header {
 .location .content .ceremony-block .timeline .timeline-grid .item .desc {
   width: 100%;
 }
+.location .content .ceremony-block .timeline .timeline-grid .item .desc .title.chinese {
+  font-family: "kaiu", sans-serif;
+}
 .location .content .ceremony-block .timeline .timeline-grid.friend {
   width: 100%;
 }
@@ -434,6 +451,9 @@ header {
   font-size: 24px;
   font-weight: 100;
   letter-spacing: 2px;
+}
+.location .content .ceremony-block .location-details.chinese {
+  font-family: "kaiu", sans-serif;
 }
 .location .content .dresscode {
   display: flex;
@@ -601,6 +621,7 @@ header {
 }
 .rsvp .content .header .main-heading.chinese {
   font-size: 27px;
+  font-family: "kaiu", sans-serif;
 }
 .rsvp .content .info-notice {
   margin-bottom: 10%;
@@ -612,6 +633,7 @@ header {
 }
 .rsvp .content .info-notice p.chinese {
   font-size: 16px;
+  font-family: "kaiu", sans-serif;
 }
 .rsvp .content .info-notice p.vi {
   margin-bottom: 3%;
@@ -625,6 +647,7 @@ header {
 }
 .rsvp .content form .form-group .question.chinese {
   font-size: 16px;
+  font-family: "kaiu", sans-serif;
 }
 .rsvp .content form .form-group input[type=text],
 .rsvp .content form .form-group input[type=number],
@@ -643,6 +666,7 @@ header {
 .rsvp .content form .form-group input[type=number].chinese,
 .rsvp .content form .form-group textarea.chinese {
   font-size: 16px;
+  font-family: "kaiu", sans-serif;
 }
 .rsvp .content form .form-group input[type=text]:focus,
 .rsvp .content form .form-group input[type=number]:focus,
@@ -690,6 +714,7 @@ header {
 }
 .rsvp .content form .form-group .attendance-buttons .radio-label.chinese {
   font-size: 16px;
+  font-family: "kaiu", sans-serif;
 }
 .rsvp .content form .form-group .attendance-buttons .radio-wrapper input[type=radio]:checked + .radio-label {
   background: #838484;
@@ -717,6 +742,7 @@ header {
 }
 .rsvp .content form .submit-btn.chinese {
   font-size: 16px;
+  font-family: "kaiu", sans-serif;
 }
 .rsvp .content form .submit-btn:hover {
   background: rgb(90, 91, 91);
@@ -782,13 +808,14 @@ header {
   color: white;
 }
 .end .content p.subtext {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
   margin-top: 55%;
   line-height: 1.2;
 }
-.end .content p.subtext {
+.end .content p.subtext.chinese {
   font-size: 14px;
+  font-family: "kaiu", sans-serif;
 }
 .end .content p.thanks-text {
   font-size: 16px;
@@ -796,9 +823,13 @@ header {
   text-transform: uppercase;
   margin-top: 2%;
 }
+.end .content p.thanks-text.chinese {
+  font-family: "kaiu", sans-serif;
+  font-size: 18px;
+}
 @media (max-width: 500px) {
   .end .content p.subtext {
-    font-size: 2.4vw;
+    font-size: 2.8vw;
     letter-spacing: 0.2vw;
   }
   .end .content p.subtext.chinese {
@@ -807,6 +838,9 @@ header {
   .end .content p.thanks-text {
     font-size: 3.2vw;
     letter-spacing: 0.2vw;
+  }
+  .end .content p.thanks-text.chinese {
+    font-size: 3.6vw;
   }
 }
 
