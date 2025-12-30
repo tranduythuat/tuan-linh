@@ -23,16 +23,6 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "HAKUYOXingShu3500";
-  src: url("https://db.onlinewebfonts.com/t/a3bef28623cf01b8848d79fa51fd432f.eot");
-  src: url("https://db.onlinewebfonts.com/t/a3bef28623cf01b8848d79fa51fd432f.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/a3bef28623cf01b8848d79fa51fd432f.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/a3bef28623cf01b8848d79fa51fd432f.woff") format("woff"), url("https://db.onlinewebfonts.com/t/a3bef28623cf01b8848d79fa51fd432f.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/a3bef28623cf01b8848d79fa51fd432f.svg#HAKUYOXingShu3500") format("svg");
-}
-@font-face {
-  font-family: "QXyingbikai";
-  src: url("https://db.onlinewebfonts.com/t/3dd5e1c6e6213716899e56a602811a0d.eot");
-  src: url("https://db.onlinewebfonts.com/t/3dd5e1c6e6213716899e56a602811a0d.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/3dd5e1c6e6213716899e56a602811a0d.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/3dd5e1c6e6213716899e56a602811a0d.woff") format("woff"), url("https://db.onlinewebfonts.com/t/3dd5e1c6e6213716899e56a602811a0d.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/3dd5e1c6e6213716899e56a602811a0d.svg#QXyingbikai") format("svg");
-}
 * {
   margin: 0;
   padding: 0;
@@ -188,6 +178,9 @@ header {
   margin-bottom: 2%;
   text-transform: uppercase;
 }
+.hero .content p.couple-names.chinese {
+  font-size: 27px;
+}
 .hero .content .invited-text {
   font-size: 12px;
   line-height: 1.5;
@@ -201,6 +194,9 @@ header {
   }
   .hero .content p.couple-names {
     font-size: 5vw;
+  }
+  .hero .content p.couple-names.chinese {
+    font-size: 5.4vw;
   }
   .hero .content .invited-text {
     font-size: 2.4vw;
@@ -255,6 +251,9 @@ header {
   font-weight: 300;
   letter-spacing: 2px;
 }
+.invitation .content .text-box .couple-info h2 {
+  font-size: 34px;
+}
 .invitation .content .text-box .couple-info .divider-couple {
   font-size: 20px;
 }
@@ -291,6 +290,9 @@ header {
   .invitation .content .text-box .couple-info h2 {
     font-size: 6.4vw;
     letter-spacing: 0.4vw;
+  }
+  .invitation .content .text-box .couple-info h2.chinese {
+    font-size: 6.8vw;
   }
   .invitation .content .text-box .couple-info .divider-couple {
     font-size: 4vw;
@@ -597,6 +599,9 @@ header {
   font-weight: 100;
   text-align: left;
 }
+.rsvp .content .header .main-heading.chinese {
+  font-size: 27px;
+}
 .rsvp .content .info-notice {
   margin-bottom: 10%;
 }
@@ -604,6 +609,9 @@ header {
   text-align: left;
   font-size: 14px;
   letter-spacing: 1px;
+}
+.rsvp .content .info-notice p.chinese {
+  font-size: 16px;
 }
 .rsvp .content .info-notice p.vi {
   margin-bottom: 3%;
@@ -614,6 +622,9 @@ header {
 .rsvp .content form .form-group .question {
   font-size: 14px;
   letter-spacing: 1px;
+}
+.rsvp .content form .form-group .question.chinese {
+  font-size: 16px;
 }
 .rsvp .content form .form-group input[type=text],
 .rsvp .content form .form-group input[type=number],
@@ -627,6 +638,11 @@ header {
   font-size: 14px;
   color: #000;
   transition: border-color 0.3s ease;
+}
+.rsvp .content form .form-group input[type=text].chinese,
+.rsvp .content form .form-group input[type=number].chinese,
+.rsvp .content form .form-group textarea.chinese {
+  font-size: 16px;
 }
 .rsvp .content form .form-group input[type=text]:focus,
 .rsvp .content form .form-group input[type=number]:focus,
@@ -672,6 +688,9 @@ header {
 .rsvp .content form .form-group .attendance-buttons .radio-label:hover {
   background: #ded1c3;
 }
+.rsvp .content form .form-group .attendance-buttons .radio-label.chinese {
+  font-size: 16px;
+}
 .rsvp .content form .form-group .attendance-buttons .radio-wrapper input[type=radio]:checked + .radio-label {
   background: #838484;
   border: 2px solid #838484;
@@ -696,6 +715,9 @@ header {
   transition: background 0.3s ease;
   margin-bottom: 10%;
 }
+.rsvp .content form .submit-btn.chinese {
+  font-size: 16px;
+}
 .rsvp .content form .submit-btn:hover {
   background: rgb(90, 91, 91);
   opacity: 0.9;
@@ -707,13 +729,22 @@ header {
   .rsvp .content .header .main-heading, .rsvp .content .header .english-heading {
     font-size: 5vw;
   }
+  .rsvp .content .header .main-heading.chinese {
+    font-size: 5.4vw;
+  }
   .rsvp .content .info-notice p {
     font-size: 2.8vw;
     letter-spacing: 0.2vw;
   }
+  .rsvp .content .info-notice p.chinese {
+    font-size: 3.2vw;
+  }
   .rsvp .content form .form-group .question {
     font-size: 2.8vw;
     letter-spacing: 0.2vw;
+  }
+  .rsvp .content form .form-group .question.chinese {
+    font-size: 3.2vw;
   }
   .rsvp .content form .form-group input[type=text],
   .rsvp .content form .form-group input[type=number],
@@ -724,9 +755,17 @@ header {
     font-size: 2.8vw;
     letter-spacing: 0.1vw;
   }
+  .rsvp .content form .form-group input[type=text].chinese,
+  .rsvp .content form .form-group input[type=number].chinese,
+  .rsvp .content form .form-group textarea.chinese {
+    font-size: 3.2vw;
+  }
   .rsvp .content form .submit-btn {
     font-size: 2.8vw;
     letter-spacing: 0.2vw;
+  }
+  .rsvp .content form .submit-btn.chinese {
+    font-size: 3.2vw;
   }
 }
 
@@ -748,6 +787,9 @@ header {
   margin-top: 55%;
   line-height: 1.2;
 }
+.end .content p.subtext {
+  font-size: 14px;
+}
 .end .content p.thanks-text {
   font-size: 16px;
   letter-spacing: 1px;
@@ -758,6 +800,9 @@ header {
   .end .content p.subtext {
     font-size: 2.4vw;
     letter-spacing: 0.2vw;
+  }
+  .end .content p.subtext.chinese {
+    font-size: 2.8vw;
   }
   .end .content p.thanks-text {
     font-size: 3.2vw;

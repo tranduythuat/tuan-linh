@@ -51,6 +51,9 @@
                     font-weight: 300;
                     letter-spacing: 2px;
                 }
+                h2 {
+                    font-size: 34px;
+                }
                 .divider-couple {
                     font-size: 20px;
                 }
@@ -103,6 +106,9 @@
                     h2 {
                         font-size: calc((32 / 500) * 100vw);  
                         letter-spacing: calc((2 / 500) * 100vw);  
+                    }
+                    h2.chinese {
+                        font-size: calc((34 / 500) * 100vw);  
                     }
                     .divider-couple {
                         font-size: calc((20 / 500) * 100vw);

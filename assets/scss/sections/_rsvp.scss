@@ -36,6 +36,9 @@
                 font-weight: 100;
                 text-align: left;
             }
+            .main-heading.chinese {
+                font-size: 27px;
+            }
         }
 
         .info-notice {
@@ -44,6 +47,9 @@
                 text-align: left;
                 font-size: 14px;
                 letter-spacing: 1px;
+            }
+            p.chinese {
+                font-size: 16px;
             }
             p.vi {
                 margin-bottom: 3%;
@@ -59,6 +65,10 @@
                     letter-spacing: 1px;
                 }
 
+                .question.chinese {
+                    font-size: 16px;
+                }
+
                 input[type="text"],
                 input[type="number"],
                 textarea {
@@ -71,6 +81,12 @@
                     font-size: 14px;
                     color: #000;
                     transition: border-color 0.3s ease;
+                }
+
+                input[type="text"].chinese,
+                input[type="number"].chinese,
+                textarea.chinese {
+                    font-size: 16px;
                 }
 
                 input[type="text"]:focus,
@@ -123,6 +139,10 @@
                         }
                     }
 
+                    .radio-label.chinese {
+                        font-size: 16px;
+                    }
+
                     .radio-wrapper input[type="radio"]:checked + .radio-label {
                         background: #838484ff;
                         border: 2px solid #838484ff;
@@ -151,6 +171,10 @@
                 transition: background 0.3s ease;
                 margin-bottom: 10%;
             }
+
+            .submit-btn.chinese {
+                font-size: 16px;
+            }
     
             .submit-btn:hover {
                 background: rgb(90, 91, 91);
@@ -170,12 +194,19 @@
                 .main-heading, .english-heading {
                     font-size: calc((25 / 500) * 100vw);
                 }
+
+                .main-heading.chinese {
+                    font-size: calc((27 / 500) * 100vw);
+                }
             }
 
             .info-notice {
                 p {
                     font-size: calc((14 / 500) * 100vw);
                     letter-spacing: calc((1 / 500) * 100vw);
+                }
+                p.chinese {
+                    font-size: calc((16/ 500) * 100vw);
                 }
             } 
     
@@ -186,21 +217,34 @@
                         letter-spacing: calc((1 / 500) * 100vw);
                     }
 
+                    .question.chinese {
+                        font-size: calc((16 / 500) * 100vw);
+                    }
+
                     input[type="text"],
                     input[type="number"],
                     textarea {
                         font-size: calc((14 / 500) * 100vw);
                     }
-    
+
                     textarea {
                         font-size: calc((14/ 500) * 100vw);
                         letter-spacing: calc((0.5 / 500) * 100vw);
+                    }
+
+                    input[type="text"].chinese,
+                    input[type="number"].chinese,
+                    textarea.chinese {
+                        font-size: calc((16 / 500) * 100vw);
                     }
                 }
     
                 .submit-btn {
                     font-size: calc((14 / 500) * 100vw);
                     letter-spacing: calc((1 / 500) * 100vw);
+                }
+                .submit-btn.chinese {
+                    font-size: calc((16 / 500) * 100vw);
                 }
             }
         }

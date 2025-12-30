@@ -17,6 +17,9 @@
             margin-top: 55%;
             line-height: 1.2;
         }
+        p.subtext {
+            font-size: 14px;
+        }
         p.thanks-text {
             font-size: 16px;
             letter-spacing: 1px;
@@ -30,6 +33,10 @@
             p.subtext {
                 font-size: calc((12 / 500) * 100vw);
                 letter-spacing: calc((1 / 500) * 100vw);
+            }
+
+            p.subtext.chinese {
+                font-size: calc((14 / 500) * 100vw);
             }
 
             p.thanks-text {

@@ -12,7 +12,13 @@
 }
 @font-face {
   font-family: "1FTVBlushingRose";
-  src: url("../../assets/fonts/1FTVBlushingRose.woff2") format("woff2"), url("../fonts/1FTVBlushingRose.woff") format("woff");
+  src: url("../../assets/fonts/1FTVBlushingRose.woff2") format("woff2"), url("../../assets/fonts/1FTVBlushingRose.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kaiu";
+  src: url("../../assets/fonts/kaiu.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -144,6 +150,10 @@ body {
   color: #fff;
   background-color: #000;
 }
+.invitation-content .btn-group a.btn-link.chinese {
+  font-family: "kaiu", sans-serif;
+  font-size: 16px;
+}
 @media (max-width: 648px) {
   .invitation-content .invitation-group {
     font-size: 1.8518518519vw;
@@ -167,6 +177,9 @@ body {
   .invitation-content .btn-group a.btn-link {
     font-size: 2.1604938272vw;
     min-height: 5.4012345679vw;
+  }
+  .invitation-content .btn-group a.btn-link.chinese {
+    font-size: 2.4691358025vw;
   }
 }
 

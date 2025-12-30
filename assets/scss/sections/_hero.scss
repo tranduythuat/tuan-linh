@@ -24,6 +24,11 @@
             margin-bottom: 2%;
             text-transform: uppercase;
         }
+
+        p.couple-names.chinese {
+            font-size: 27px;
+        }
+
         .invited-text {
             font-size: 12px;
             line-height: 1.5;
@@ -40,6 +45,10 @@
             }
             p.couple-names {
                 font-size: calc((25 / 500) * 100vw);
+            }
+
+            p.couple-names.chinese {
+                font-size: calc((27 / 500) * 100vw);
             }
             .invited-text {
                 font-size: calc((12/ 500) * 100vw);
