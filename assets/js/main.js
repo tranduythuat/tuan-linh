@@ -139,7 +139,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const {
       name: name,
-      confirm: confirm
+      confirm: confirm,
+      wish: wish,
     } = data;
     console.log("🚀 ~ handleFormSubmit 2~ data:", data);
 
@@ -155,8 +156,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const SHEET_ENDPOINTS = {
-      vi: "?sheet=vi",
-      ch: "?sheet=en",
+      vi: "https://script.google.com/macros/s/AKfycbzZxA55wGdYuc8dUdT1L8CZiaG_RX1bnpnw1V4enwIARQ9U1Dazc1GR7bHtgrxNjGNZ/exec?sheet=vi",
+      ch: "https://script.google.com/macros/s/AKfycbzZxA55wGdYuc8dUdT1L8CZiaG_RX1bnpnw1V4enwIARQ9U1Dazc1GR7bHtgrxNjGNZ/exec?sheet=chinese",
     };
 
     const sheetURL = SHEET_ENDPOINTS[lang] || SHEET_ENDPOINTS.vi;
@@ -168,6 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
         body: new URLSearchParams({
           name,
           confirm,
+          wish
         }),
       });
 

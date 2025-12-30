@@ -68,6 +68,11 @@ section {
     }
 }
 
+div:where(.swal2-container) h2:where(.swal2-title),
+div:where(.swal2-container) div:where(.swal2-html-container) {
+    font-family: 'kaiu', sans-serif;
+}
+
 @media (max-width: 500px) {
     body {
         font-size: calc(($font-size-base / 500px) * 100vw);
