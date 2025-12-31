@@ -90,11 +90,6 @@ section {
     transform: rotate(360deg);
   }
 }
-div:where(.swal2-container) h2:where(.swal2-title),
-div:where(.swal2-container) div:where(.swal2-html-container) {
-  font-family: "kaiu", sans-serif;
-}
-
 @media (max-width: 500px) {
   body {
     font-size: 2.53vw;
